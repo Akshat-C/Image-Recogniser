@@ -1,0 +1,17 @@
+#camera, #result {
+    border: 2px solid black;
+    height: 250px;
+    width: 270px;
+}
+
+body {
+    background-image: url("Img Recognition.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#heading_div {
+    background-color: yellow;
+    width: 100%;
+    padding: 7px;
+}

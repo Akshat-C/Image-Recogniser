@@ -1,0 +1,45 @@
+<html>
+
+
+<head>
+    <title>Image Recogniser</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+
+    <center>
+        <div id="heading_div">
+        <h1>Image Recogniser App</h1>
+        <h3>Model is Trained on:</h3>
+        <h4>Sunglasses | Book | Pencil Box | Toy Car | Mask | Umbrella | Water Bottle | Pen | Marker | Mouse</h4>
+    </div>
+        <div >
+            <h5 class="text-danger"><b>Webcam View- </b></h5>
+            <div id="camera"></div>
+        </div>
+        <br>
+        <div>
+            <h5 class="text-danger"><b>Snapshot View</b></h5>
+        <div id="result"></div>
+    </div>
+    <br>
+        <button class="btn btn-warning" onclick="take_image()">Capture Image</button>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="identify_image()">Identify Image</button>
+        <br>
+        <h5><b>Object : </b></h5><span id="object_name"></span>
+        <h5><b>Accuracy : </b></h5><span id="object_accuracy"></span>
+    </center>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
